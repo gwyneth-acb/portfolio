@@ -16,7 +16,7 @@ body, a {
 
 main {
     padding-left: max(22vw, 400px);
-    min-width: 700px;
+    min-width: 25px;
     width: 55%;
 }
 
@@ -33,11 +33,6 @@ h1, h2, li {
     font-family: 'jeju';
 }
 
-ul > li:hover {
-    background: rgba(255, 255, 255, 0.60);
-    border-radius: 15pt;
-    width: 275pt;
-}
 
 h1 {
     padding-top: 40px;
@@ -61,7 +56,7 @@ aside {
     padding-top: 20px;
     padding-left: 40px;
     width: 14%;
-    min-width: 250px;
+    min-width: 260px;
     height: 100%; /* Full height */
     background-color: #F1ECF1; /* Background color */
     z-index: 1; /* Ensure content appears above background */
@@ -79,6 +74,17 @@ aside::before{
     transform: rotate(2.5deg); /* Apply rotation */
     transform-origin: top right;
     z-index: -1; /* Ensure background stays behind the content */
+}
+
+a:hover::after, .selected-effect {
+  content: ""; /* Necessary for the pseudo-element */
+  position: absolute;
+  right: -10px;  /* Start from the left edge of the parent (the <a> element) */
+  width: 100vw;  /* Make it stretch across the entire viewport width */
+  height: 22pt;  /* Match the height of the <a> element */
+  background: rgba(255, 255, 255, 0.70); /* Background color */
+  border-radius: 10px; /* Optional: if you want rounded corners */
+  z-index: -1; /* Place it behind the content */
 }
 
 .star-bullets {
@@ -121,3 +127,4 @@ aside::before{
     left: 0; /* Align the bullet to the left */
     line-height: 1; /* Ensure alignment with the text */
 }
+
