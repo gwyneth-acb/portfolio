@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'jeju';
+    src: url('fonts/JejuMyeongjo.woff2') format('woff2'), /* Modern browsers */
+         url('fonts/JejuMyeongjo.woff') format('woff');   /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Inria Serif';
+}
+
+body, a {
+    color: #5E374C
+}
+
+main {
+    padding-left: max(22vw, 400px);
+    min-width: 700px;
+    width: 55%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#name {
+    padding-top: 0;
+    font-size: 30pt;
+}
+
+h1, h2, li {
+    font-family: 'jeju';
+}
+
+ul > li:hover {
+    background: rgba(255, 255, 255, 0.60);
+    border-radius: 15pt;
+    width: 275pt;
+}
+
+h1 {
+    padding-top: 40px;
+    font-size: 60px;
+}
+
+p {
+    font-size: 22px;
+}
+
+h2 {
+
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+aside {
+    top: 0;
+    left: 0;
+    position: fixed; /* Absolute positioning relative to the aside */
+    padding-top: 20px;
+    padding-left: 40px;
+    width: 14%;
+    min-width: 250px;
+    height: 100%; /* Full height */
+    background-color: #F1ECF1; /* Background color */
+    z-index: 1; /* Ensure content appears above background */
+}
+
+aside::before{
+    content: ""; /* Necessary for pseudo-elements */
+    position: fixed; /* Absolute positioning relative to the aside */
+    top: 0;
+    left: 0;
+    min-width: 360px;
+    width: 19%;
+    height: 100%; /* Full height */
+    background-color: #F1ECF1; /* Background color */
+    transform: rotate(2.5deg); /* Apply rotation */
+    transform-origin: top right;
+    z-index: -1; /* Ensure background stays behind the content */
+}
+
+.star-bullets {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 10px; /* Adjust padding if needed */
+}
+
+.star-bullets li {
+    position: relative; /* Allow positioning of the pseudo-element */
+    padding-left: 1.5em; /* Space for the custom bullet */
+    font-size: 25px;
+}
+
+.star-bullets li::before {
+    content: "☆";
+    position: absolute;
+    left: 0; /* Align the bullet to the left */
+    line-height: 1; /* Ensure alignment with the text */
+}
+
+.star-bullets li:has(> ul) {
+    padding-top: 15px;
+    padding-left: 1.5em;
+    padding-bottom: 5px;
+}
+
+.reg-bullets {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 5px; /* Adjust padding if needed */
+}
+
+.reg-bullets li {
+    position: relative; /* Allow positioning of the pseudo-element */
+    padding-left: 0.75em; /* Space for the custom bullet */
+}
+
+.reg-bullets li::before {
+    content: ">";
+    position: absolute;
+    left: 0; /* Align the bullet to the left */
+    line-height: 1; /* Ensure alignment with the text */
+}
