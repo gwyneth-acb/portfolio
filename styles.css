@@ -6,6 +6,8 @@
     font-style: normal;
 }
 
+/* MAIN CONTENT */
+
 body {
     font-family: 'Inria Serif';
 }
@@ -15,10 +17,13 @@ body, a {
 }
 
 main {
-    padding-left: max(22vw, 400px);
-    min-width: 25px;
-    width: 55%;
+    padding-left: max(23vw, 400px);
+    min-width: 100px;
+    max-width: 900px;
+    width: 60%;
 }
+
+/* TEXT CONTENT*/
 
 a {
     text-decoration: none;
@@ -44,48 +49,27 @@ p {
 }
 
 h2 {
-
     font-size: 40px;
     padding-top: 20px;
 }
 
-aside {
-    top: 0;
-    left: 0;
-    position: fixed; /* Absolute positioning relative to the aside */
-    padding-top: 20px;
-    padding-left: 40px;
-    width: 14%;
-    min-width: 260px;
-    height: 100%; /* Full height */
-    background-color: #F1ECF1; /* Background color */
-    z-index: 1; /* Ensure content appears above background */
+h3 {
+    font-size: 27px;
+    margin: 0;
 }
 
-aside::before{
-    content: ""; /* Necessary for pseudo-elements */
-    position: fixed; /* Absolute positioning relative to the aside */
-    top: 0;
-    left: 0;
-    min-width: 360px;
-    width: 19%;
-    height: 100%; /* Full height */
-    background-color: #F1ECF1; /* Background color */
-    transform: rotate(2.5deg); /* Apply rotation */
-    transform-origin: top right;
-    z-index: -1; /* Ensure background stays behind the content */
-}
-
-a:hover::after, .selected-effect {
-  content: ""; /* Necessary for the pseudo-element */
+a:hover::after, a.selected-effect::after  {
+  content: "";
   position: absolute;
-  right: -10px;  /* Start from the left edge of the parent (the <a> element) */
+  right: -10px;  /* Start from the right edge of the parent (the <a> element) */
   width: 100vw;  /* Make it stretch across the entire viewport width */
-  height: 22pt;  /* Match the height of the <a> element */
-  background: rgba(255, 255, 255, 0.70); /* Background color */
-  border-radius: 10px; /* Optional: if you want rounded corners */
-  z-index: -1; /* Place it behind the content */
+  height: 20pt;
+  background: rgba(255, 255, 255, 0.70);
+  border-radius: 10px;
+  z-index: -1;
 }
+
+/* BULLET CONTENT */
 
 .star-bullets {
     list-style-type: none; /* Remove default bullets */
@@ -127,4 +111,74 @@ a:hover::after, .selected-effect {
     left: 0; /* Align the bullet to the left */
     line-height: 1; /* Ensure alignment with the text */
 }
+
+
+/*PROJECT CARD CONTENT*/
+
+.project-card {
+    border: #5E374C 1pt solid;
+    margin-bottom: 20px;
+}
+
+.project-card:hover {
+    border: #5E374C 2pt solid;
+}
+
+.project-card, .project-header {
+    border-radius: 15px;
+}
+
+.project-header {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    background-color: #F1ECF1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.project-description p {
+    padding: 0 15px 10px 30px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.project-header p {
+    font-style: italic;
+    margin: 0;
+}
+
+/*ASIDE CONTENT */
+
+aside {
+    top: 0;
+    left: 0;
+    position: fixed; /* fixed to the side of the screen */
+    padding-top: 20px;
+    padding-left: 40px;
+    width: 14%;
+    min-width: 260px;
+    height: 100%; /* height of screen*/
+    background-color: #F1ECF1;
+    z-index: 1; /*  above background */
+}
+
+aside::before{
+    content: "";
+    position: fixed; /* fixed to the side of the screen */
+    top: 0;
+    left: 0;
+    min-width: 350px;
+    width: 19%;
+    height: 100%;
+    background-color: #F1ECF1;
+    transform: rotate(2.5deg);
+    transform-origin: top right;
+    z-index: -1;
+}
+
+
+
 
