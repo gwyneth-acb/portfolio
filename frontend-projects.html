@@ -7,23 +7,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <script src="static/script.js" defer></script>
-    <title>About Me</title>
+    <title>Front-End Projects</title>
 </head>
 <body>
+
     <!-- Side Navigation -->
     <aside aria-labelledby="sidebar">
         <h2 id="name"> Gwyneth <br> Balite </h2>
       <nav aria-label="Main navigation">
         <ul class="star-bullets">
           <li><a href="index.html" >Home</a></li>
-          <li><a href="about.html" class="selected-effect">About Me</a></li>
+          <li><a href="about.html" >About Me</a></li>
           <li><a href="ux-projects.html">UI/UX Projects</a>
             <ul class="reg-bullets">
                 <li ><a href="moonlight.html" >moonlight</a></li>
                 <li><a href="loast.html">loast</a></li>
             </ul>
           </li>
-          <li><a href="frontend-projects.html">Front-End Projects</a>
+          <li><a href="frontend-projects.html" class="selected-effect">Front-End Projects</a>
             <ul class="reg-bullets">
                 <li><a href="focus.html">focus dashboard</a></li>
                 <li><a href="portfolio.html">portfolio</a></li>
@@ -39,25 +40,30 @@
     </aside>
 
     <main>
+        <h1> Front-End Projects </h1>
+        <p> ☆☆ This page is still under construction ! come back later :> </p>
 
-        <h1> About Me ☆ </h1>
-        <p> When I was about 6,  I moved from the Philippines to the US with my family. Ever since then, I’ve been leveraging my opportunities to pursue a career in design and bring good to those around me.</p>
-
-        <p> My passion for design is driven by my values. I value empathy, creativity and achieving the highest quality in everything I create. These intrinsic values have inspired me to pursue a career that allows me to utilize these aspects of myself. </p>
-
-        <h2> > Interests and Hobbies </h2>
-        <ul class="star-bullets" id="interests">
-            <li>
-                <h3> Digital Art </h3>
-                <p> I post my art on instagram and am currently working on a webcomic! </p>
-            </li>
-            <li>
-                <h3> Stardew Valley </h3>
-                <p> I have 1000+ hours on this game and completed perfection 5 times!! </p>
-            </li>
-
-        </ul>
-
+        <h2> > Projects </h2>
+        <div class="project-card" id="focus-dashboard">
+            <div class="project-header">
+                <!-- icon-->
+                <h3> ☆ Focus Dashboard </h3>
+                <p> (Fall 2024) </p>
+            </div>
+            <div class="project-description">
+                <p> Developed a site that features a background that changes color according to the current video playing, which is inserted by the user. </p>
+            </div>
+        </div>
+              <div class="project-card" id="portfolio">
+            <div class="project-header">
+                <!-- icon-->
+                <h3> ☆ Portfolio </h3>
+                <p> (ongoing) </p>
+            </div>
+            <div class="project-description">
+                <p> Developed a site that acts as a portfolio and features all types of projects created by the developer. </p>
+            </div>
+        </div>
     </main>
 
 </body>
