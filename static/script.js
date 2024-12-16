@@ -12,3 +12,7 @@ document.getElementById("focus-dashboard").addEventListener("click", () => {
 document.getElementById("project-loast").addEventListener("click", () => {
     window.location.href = "loast.html";
 });
+
+document.getElementById("portfolio").addEventListener("click", () => {
+    window.location.href = "portfolio.html";
+});
