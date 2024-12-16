@@ -1,18 +1,31 @@
 
 
 // CARD NAVIGATION
-document.getElementById("moonlight").addEventListener("click", () => {
-    window.location.href = "moonlight.html";
-});
 
-document.getElementById("focus-dashboard").addEventListener("click", () => {
-    window.location.href = "focus.html";
-});
+let moonlight = document.getElementById("moonlight");
+if (moonlight) {
+    moonlight.addEventListener("click", () => {
+        window.location.href = "moonlight.html";
+    });
+}
 
-document.getElementById("project-loast").addEventListener("click", () => {
-    window.location.href = "loast.html";
-});
+let focus = document.getElementById("focus-dashboard");
+if (focus) {
+   focus.addEventListener("click", () => {
+       window.location.href = "focus.html";
+    });
+}
 
-document.getElementById("portfolio").addEventListener("click", () => {
-    window.location.href = "portfolio.html";
-});
+let loast = document.getElementById("project-loast");
+if (loast) {
+   loast.addEventListener("click", () => {
+       window.location.href = "loast.html";
+   });
+}
+
+let portfolio = document.getElementById("portfolio");
+if (portfolio) {
+    portfolio.addEventListener("click", () => {
+        window.location.href = "portfolio.html";
+    });
+}
