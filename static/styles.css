@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'jeju';
-    src: url('fonts/JejuMyeongjo.woff2') format('woff2'), /* Modern browsers */
-         url('fonts/JejuMyeongjo.woff') format('woff');   /* Fallback */
+    src: url('../fonts/JejuMyeongjo.woff2') format('woff2'), /* Modern browsers */
+         url('../fonts/JejuMyeongjo.woff') format('woff');   /* Fallback */
     font-weight: normal;
     font-style: normal;
 }
@@ -20,7 +20,8 @@ main {
     padding-left: max(23vw, 400px);
     min-width: 100px;
     max-width: 900px;
-    width: 60%;
+    width: 65%;
+    padding-bottom: 75px;
 }
 
 /* TEXT CONTENT*/
@@ -69,6 +70,11 @@ a:hover::after, a.selected-effect::after  {
   z-index: -1;
 }
 
+.link {
+    font-style: italic;
+    text-decoration: underline;
+}
+
 /* BULLET CONTENT */
 
 .star-bullets {
@@ -89,7 +95,7 @@ a:hover::after, a.selected-effect::after  {
     line-height: 1; /* Ensure alignment with the text */
 }
 
-.star-bullets li:has(> ul) {
+.star-bullets li:has(> ul), #interests li {
     padding-top: 15px;
     padding-left: 1.5em;
     padding-bottom: 5px;
@@ -145,9 +151,14 @@ a:hover::after, a.selected-effect::after  {
     font-size: 20px;
 }
 
-.project-header p {
+.project-header p, #interests p {
     font-style: italic;
     margin: 0;
+}
+
+#interests p {
+    max-width: 400px;
+    padding: 5px 0;
 }
 
 /*ASIDE CONTENT */

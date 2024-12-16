@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="static/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="static/script.js" defer></script>
     <title>Gwyneth's Portfolio</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
       <nav aria-label="Main navigation">
         <ul class="star-bullets">
           <li><a href="#home" class="selected-effect">Home</a></li>
-          <li><a href="#aboutme" >About Me</a></li>
+          <li><a href="about.html" >About Me</a></li>
           <li><a href="#ui/uxprojects">UI/UX Projects</a>
             <ul class="reg-bullets">
                 <li ><a href="#moonlight" >moonlight</a></li>
@@ -40,12 +41,12 @@
 
         <h1> Welcome! </h1>
         <p> I’m Gwyneth, an aspiring designer currently studying Human-Centered Design and Engineering at the University of Washington in Seattle, WA.</p>
-        <p> I strive for designs to be simple yet intuitive and impactful, fostering a meaningful connection between users and the product. </p>
-        <p> Here’s my resume. Take a look at my projects below! </p>
+        <p> I strive for designs to be simple, intuitive and impactful to foster a meaningful connection between users and the product. </p>
+        <p> Here’s my <a href="https://drive.google.com/file/d/1gQ6WNDZQdAiRJ7MoBOpM_aBm_nhnVwTd/view?usp=sharing" class="link" target="_blank"> resume</a>. Take a look at my projects below! </p>
 
         <h2> > My Projects </h2>
         <div class="project-card" >
-            <div class="project-header" >
+            <div class="project-header" id="moonlight">
                 <!-- icon-->
                 <h3> ☆ Moonlight </h3>
                 <p> (Fall 2024) </p>
@@ -55,7 +56,7 @@
             </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" id="focus-dashboard">
             <div class="project-header">
                 <!-- icon-->
                 <h3> ☆ Focus Dashboard </h3>
@@ -66,7 +67,7 @@
             </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" id="project-loast">
             <div class="project-header">
                 <!-- icon-->
                 <h3> ☆ Project Loast </h3>
@@ -80,12 +81,9 @@
         <h2> > Site Updates </h2>
 
         <p> hey there! this is all i have since i'm still building the site, so please be patient with me! i'll push certain projects soon :3</p>
-        <p> come again later? </p>
+        <p>  ☆ as of 12/16/24, ive added functionality to the 'about me' section ! ☆ </p>
 
     </main>
-
-
-
 
 </body>
 </html>
