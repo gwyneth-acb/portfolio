@@ -47,16 +47,17 @@ h1 {
 
 p {
     font-size: 22px;
+    font-family: 'Inria Serif';
 }
 
 h2 {
     font-size: 40px;
-    padding-top: 20px;
 }
 
 h3 {
     font-size: 27px;
     margin: 0;
+    font-family: 'Inria Serif';
 }
 
 a:hover::after, a.selected-effect::after  {
@@ -73,6 +74,11 @@ a:hover::after, a.selected-effect::after  {
 .link {
     font-style: italic;
     text-decoration: underline;
+}
+
+img {
+    padding-bottom: 15px;
+    padding-top: 10px;
 }
 
 /* BULLET CONTENT */
@@ -95,10 +101,17 @@ a:hover::after, a.selected-effect::after  {
     line-height: 1; /* Ensure alignment with the text */
 }
 
-.star-bullets li:has(> ul), #interests li {
-    padding-top: 15px;
+.star-bullets li:has(> ul), #with-descriptions li {
     padding-left: 1.5em;
+}
+
+.star-bullets li:has(> ul) {
     padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+#with-descriptions li {
+    padding-bottom: 20px;
 }
 
 .reg-bullets {
@@ -117,7 +130,6 @@ a:hover::after, a.selected-effect::after  {
     left: 0; /* Align the bullet to the left */
     line-height: 1; /* Ensure alignment with the text */
 }
-
 
 /*PROJECT CARD CONTENT*/
 
@@ -151,13 +163,12 @@ a:hover::after, a.selected-effect::after  {
     font-size: 20px;
 }
 
-.project-header p, #interests p {
+.project-header p, #with-descriptions p {
     font-style: italic;
     margin: 0;
 }
 
-#interests p {
-    max-width: 400px;
+#with-descriptions p {
     padding: 5px 0;
 }
 

@@ -1,5 +1,4 @@
 
-
 // CARD NAVIGATION
 
 let moonlight = document.getElementById("moonlight");
