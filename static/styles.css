@@ -81,6 +81,10 @@ img {
     padding-top: 10px;
 }
 
+#contact {
+    padding-top: 18px;
+}
+
 /* BULLET CONTENT */
 
 .star-bullets {
@@ -135,6 +139,10 @@ img {
     line-height: 1; /* Ensure alignment with the text */
 }
 
+.contact li {
+    font-size: 22px;
+}
+
 /*PROJECT CARD CONTENT*/
 
 .project-card {
@@ -174,6 +182,10 @@ img {
 
 .with-descriptions p {
     padding: 5px 0;
+}
+
+.reg-bullets {
+
 }
 
 /*ASIDE CONTENT */
