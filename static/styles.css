@@ -21,8 +21,9 @@ main {
     min-width: 100px;
     max-width: 900px;
     width: 65%;
-    padding-bottom: 75px;
+    padding-bottom: 25px;
 }
+
 
 /* TEXT CONTENT*/
 
@@ -139,8 +140,25 @@ img {
     line-height: 1; /* Ensure alignment with the text */
 }
 
-.contact li {
+.smaller-text li {
     font-size: 22px;
+}
+
+.navigational {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-cntr {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigational li {
+    padding-bottom: 10px;
+
 }
 
 /*PROJECT CARD CONTENT*/
