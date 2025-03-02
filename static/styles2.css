@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'jeju';
+    src: url('../fonts/JejuMyeongjo.woff2') format('woff2'), /* Modern browsers */
+         url('../fonts/JejuMyeongjo.woff') format('woff');   /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* MAIN CONTENT */
+
+body, a {
+    color: #5E374C
+}
+
+p {
+    font-family: "Inria Serif";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 100px;
+}
+
+main p {
+    font-size: 22px;
+    text-align: center;
+}
+
+#namemark {
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 100px;
+    font-family: jeju;
+    font-weight: lighter;
+}
+
+header {
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #F1ECF1;
+    text-align: center;
+}
+
+#main-nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: #F1ECF1;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 27px;
+    z-index: 1000; /* Ensures the navbar stays on top */
+}
+
+#selected {
+    text-decoration: underline;
+}
