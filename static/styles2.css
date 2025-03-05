@@ -16,19 +16,53 @@ p {
     font-family: "Inria Serif";
 }
 
+h2 {
+    font-family: "Inria Serif";
+    font-weight: normal;
+}
+
+a {
+    font-weight: bold;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
-main {
-    padding-top: 100px;
+#landing-txt {
+    display: none;
 }
 
-main p {
+section {
+    padding: 100px 0;
+}
+
+main p, footer, h2 {
     font-size: 22px;
+}
+
+section p, footer {
     text-align: center;
 }
+
+h2 {
+    font-size: 30px;
+}
+
+footer {
+    padding: 50px
+}
+
+.italic {
+    font-style: italic;
+}
+
+.selected {
+    text-decoration: underline;
+}
+
+/* HEADER */
 
 #namemark {
     margin: 0;
@@ -40,7 +74,6 @@ main p {
 }
 
 header {
-
     margin: 0;
     padding: 0;
     width: 100%;
@@ -48,18 +81,46 @@ header {
     text-align: center;
 }
 
-#main-nav {
+/* NAV BAR */
+
+nav {
     position: sticky;
     top: 0;
-    display: flex;
     background-color: #F1ECF1;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
     font-size: 27px;
+    justify-content: space-between;
+}
+
+#main-nav {
+    align-items: center;
+    justify-content: center;
     z-index: 1000; /* Ensures the navbar stays on top */
 }
 
-#selected {
-    text-decoration: underline;
+nav, nav div {
+    display: flex;
+    padding: 0 30px;
+    gap: 40px;
 }
+
+/* OVERVIEW CARD */
+
+.overview-card {
+    padding: 10px 60px;
+}
+
+.overview-card h2 {
+    margin: 10px;
+}
+
+.overview-card p {
+    margin: 10px;
+    text-align: left;
+}
+
+#overview-cntr {
+    padding: 25px 0
+}
+
+
+
