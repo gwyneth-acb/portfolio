@@ -235,6 +235,10 @@ aside::before{
     z-index: -1;
 }
 
-
+.vid-cntr {
+    display: flex;
+    gap: 50px;
+    padding-left: 20px
+}
 
 
